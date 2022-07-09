@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <meta charset="utf-8">
         <title>CSE134B HW2</title>
+        <link href="images/favicon.ico" rel="icon">
+
+        <style>
+            h1 { color:orange;}
+        </style>
     </head>
+
     <body>
-        <h1>Hello hw2</h1>
+        <h1>Kevin Yu's <span>Personal Portfolio</span></h1>
+
+        <section title="navg">
+            <nav>
+                <a href="#name">Name</a> |
+                <a href="#about me">About Me</a>
+            </nav>
+        </section>
+
+        <main>
+            <section title="name">
+                <h2 id="name">Kevin Yu</h2>
+            </section>
+
+            <aside>
+                <section title="about me">
+                    <h3 id="about me">About Me</h3>
+                    <p>Age: 22</p>
+                </section>
+            </aside>
+        </main>
+
+        <section title="experiments">
+            <header>
+                <h1>Below is the Experiments section:</h1>
+                <p>Created by Kevin Yu</p>
+            </header>
+
+            <div>
+                <canvas id="canvas1">
+                    Your browser does not support the canvas tag.
+                </canvas>
+                    
+                <script>
+                    var canvas = document.getElementById("canvas1");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "gray";
+                    ctx.fillRect(0, 0, 160, 160);
+                </script>
+            </div>
+        </section>
+
+        <footer>
+            This website is created by Kevin Yu.
+        </footer>
     </body>
+
 </html>
