@@ -7,56 +7,92 @@
         <link href="images/favicon.ico" rel="icon">
 
         <style>
-            h1 { color:orange;}
+            h2 { color:orange;}
         </style>
     </head>
 
     <body>
+        <br>
         <h1>Kevin Yu's <span>Personal Portfolio</span></h1>
+        <hr>
 
-        <section title="navg">
+        <section title="nav">
             <h2>Nav Bar:</h2>
             <nav>
                 <a href="#name">Name</a> |
-                <a href="#about-me">About Me</a>
+                <a href="#about">About Me</a> |
+                <a href="#background">Background</a> |
+                <a href="#hobbies">Hobbies</a> |
+                <a href="#goals">Goals</a> |
+                <a href="#contact">Contact Me</a>
             </nav>
         </section>
+        <hr>
+
+        <!--Remove at the end-->
+        <p>Here is the Experiments Page: <a href="experiments.html"><strong>**Experiments Page**</strong></a></p>
+        <hr>
 
         <main>
             <section title="name">
-                <h2 id="name">Kevin Yu</h2>
+                <h2 id="name"><strong>Kevin Yu</strong></h2>
+                <img src="images/Capture.PNG" alt="This is ME?" width="300" height="600">
             </section>
+            <hr>
 
-            <aside>
-                <section title="about-me">
-                    <h3 id="about-me">About Me</h3>
-                    <p>Age: 22</p>
-                </section>
-            </aside>
+            <section title="about">
+                <h2 id="about">About Me</h2>
+                <pre>
+Age:        22
+Location:   San Diego
+Major:      Computer Science
+Status:     Single
+                </pre>
+            </section>
+            <hr>
+
+            <section title="background">
+                <h2 id="background">Background</h2>
+                <p>Hi, my name is Kevin Yu and I am a senior in UCSD.</p>
+                <details>
+                    <summary>More detail!</summary>
+                    <p>My family members have recently added two cats!</p>
+                </details>
+            </section>
+            <hr>
+
+            <section title="hobbies">
+                <h2 id="hobbies">Hobbies</h2>
+                <ul>
+                    <li>Cooking</li>
+                    <li>Coding</li>
+                    <li>Gaming</li>
+                    <li>Sleeping</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section title="goals">
+                <h2 id="goals">Goals</h2>
+                <ul>
+                    <li>To graduate at UCSD in this summer.</li>
+                    <li>To improve my communication and make friends.</li>
+                </ul>
+            </section>
+            <hr>
+
+            <section title="contact">
+                <h2 id="contact">Contact Me</h2>
+                <ol>
+                    <li>Email: <a href="abcd@ucsd.edu">abcd@ucsd.edu</a></li>
+                    <li>Phone: (123) 456-7890</li>
+                </ol>
+            </section>
+            <hr>
         </main>
 
-        <section title="experiments">
-            <header>
-                <h1>Below is the Experiments section:</h1>
-                <p>Created by Kevin Yu</p>
-            </header>
-
-            <div>
-                <canvas id="canvas1">
-                    Your browser does not support the canvas tag.
-                </canvas>
-                    
-                <script>
-                    var canvas = document.getElementById("canvas1");
-                    var ctx = canvas.getContext("2d");
-                    ctx.fillStyle = "gray";
-                    ctx.fillRect(0, 0, 160, 160);
-                </script>
-            </div>
-        </section>
-
         <footer>
-            This website is created by Kevin Yu.
+            This website is created by <em>Kevin Yu</em>.
         </footer>
     </body>
 
